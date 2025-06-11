@@ -1,0 +1,147 @@
+[
+  {
+    "timestamp": "2025-06-11T18:44:49.802190",
+    "type": "POSTCONDITION",
+    "function": "deposit",
+    "message": "Balance update failed",
+    "details": {
+      "result": "1500",
+      "args": [
+        "{'account_id': 'ACC-123', 'balance': 1500}",
+        "500"
+      ],
+      "kwargs": "{}"
+    }
+  },
+  {
+    "timestamp": "2025-06-11T18:44:49.802190",
+    "type": "POSTCONDITION",
+    "function": "withdraw",
+    "message": "Balance update failed",
+    "details": {
+      "result": "1300",
+      "args": [
+        "{'account_id': 'ACC-123', 'balance': 1300}",
+        "200"
+      ],
+      "kwargs": "{}"
+    }
+  },
+  {
+    "timestamp": "2025-06-11T18:44:49.802190",
+    "type": "PRECONDITION",
+    "function": "deposit",
+    "message": "Amount must be positive",
+    "details": {
+      "args": [
+        "{'account_id': 'ACC-123', 'balance': 1300}",
+        "-100"
+      ],
+      "kwargs": "{}"
+    }
+  },
+  {
+    "timestamp": "2025-06-11T18:44:49.823345",
+    "type": "PRECONDITION",
+    "function": "withdraw",
+    "message": "Insufficient funds",
+    "details": {
+      "args": [
+        "{'account_id': 'ACC-123', 'balance': 1300}",
+        "2000"
+      ],
+      "kwargs": "{}"
+    }
+  },
+  {
+    "timestamp": "2025-06-11T18:45:51.892199",
+    "type": "PRECONDITION",
+    "function": "deposit",
+    "message": "Amount must be positive",
+    "details": {
+      "args": [
+        "{'account_id': 'ACC-123', 'balance': 1300}",
+        "-100"
+      ],
+      "kwargs": "{}"
+    }
+  },
+  {
+    "timestamp": "2025-06-11T18:45:51.892199",
+    "type": "PRECONDITION",
+    "function": "withdraw",
+    "message": "Insufficient funds",
+    "details": {
+      "args": [
+        "{'account_id': 'ACC-123', 'balance': 1300}",
+        "2000"
+      ],
+      "kwargs": "{}"
+    }
+  },
+  {
+    "timestamp": "2025-06-11 23:48:42",
+    "type": "PRECONDITION",
+    "function": "deposit",
+    "message": "Amount must be positive",
+    "details": {
+      "args": [
+        "{'account_id': 'ACC-123', 'balance': 1000.0}",
+        "-500.0"
+      ],
+      "kwargs": "{}"
+    }
+  },
+  {
+    "timestamp": "2025-06-11 23:48:45",
+    "type": "PRECONDITION",
+    "function": "withdraw",
+    "message": "Amount must be positive",
+    "details": {
+      "args": [
+        "{'account_id': 'ACC-123', 'balance': 1000.0}",
+        "-500.0"
+      ],
+      "kwargs": "{}"
+    }
+  },
+  {
+    "timestamp": "2025-06-11 23:48:54",
+    "type": "PRECONDITION",
+    "function": "withdraw",
+    "message": "Insufficient funds",
+    "details": {
+      "args": [
+        "{'account_id': 'ACC-123', 'balance': 1000.0}",
+        "5500.0"
+      ],
+      "kwargs": "{}"
+    }
+  },
+  {
+    "timestamp": "2025-06-12 00:04:14",
+    "type": "PRECONDITION",
+    "function": "withdraw",
+    "message": "Amount must be positive",
+    "details": {
+      "args": [
+        "{'account_id': 'ACC-123', 'balance': 1500.0, 'transaction_history': [('2025-06-12 00:03:52', 'DEPOSIT', 500.0, 1500.0)]}",
+        "-59.0"
+      ],
+      "kwargs": "{}"
+    }
+  },
+  {
+    "timestamp": "2025-06-12 00:04:40",
+    "type": "PRECONDITION",
+    "function": "withdraw",
+    "message": "Insufficient funds",
+    "details": {
+      "args": [
+        "{'account_id': 'ACC-123', 'balance': 1000.0, 'transaction_history': [('2025-06-12 00:03:52', 'DEPOSIT', 500.0, 1500.0), ('2025-06-12 00:04:26', 'WITHDRAWAL', 500.0, 1000.0)]}",
+        "7000.0"
+      ],
+      "kwargs": "{}"
+    }
+  }
+]
